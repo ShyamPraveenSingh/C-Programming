@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()
 {
     int n,arr[100], i, j, k, temp;
@@ -30,4 +31,3 @@ int main()
     printf("\n");
 
 }
-
