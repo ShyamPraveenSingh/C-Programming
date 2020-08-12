@@ -1,5 +1,4 @@
 //Function for counting the elements of the Linked List
-
 void count(struct node *start)
 {
     int count = 0;
