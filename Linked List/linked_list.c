@@ -1,4 +1,5 @@
 //Program of single linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -161,4 +162,3 @@ struct node *reverse(struct node *start)
     start = prev;
     return start;
 }
-
