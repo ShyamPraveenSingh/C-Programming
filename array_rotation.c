@@ -22,6 +22,7 @@ int main()
         }
         arr[i] = temp;
     }
+
     printf("\n After rotation\n");
         for(i = 0; i<n; i++){
             printf("%d\t", arr[i]);

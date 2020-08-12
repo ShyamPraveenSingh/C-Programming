@@ -1,11 +1,8 @@
 //Program for creation of adjacency matrix
-
 #include <stdio.h>
 #define MAX 100
-
 int adj[MAX] [MAX];
 int n;
-
 main()
 {
     int max_edge, i, j, origin, destin;

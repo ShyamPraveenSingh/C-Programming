@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 struct new
 {
     int n;

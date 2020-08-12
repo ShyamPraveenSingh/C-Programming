@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int func(int x, int y, int *ps, int *pd, int *pp);
 int main()
 {
