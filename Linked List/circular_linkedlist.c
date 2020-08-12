@@ -1,7 +1,6 @@
 //Program for operation in circular linked list
 #include <stdio.h>
 #include <stdlib.h>
-
 struct node 
 {
     int info;
@@ -39,8 +38,6 @@ void display(struct node *last)
     } while (p!=last->link);
     printf("\n");
 }
-
-
 //Inserttion at the beginning of the list
 struct node *addtobeg(struct node *last, int data)
 {
@@ -84,7 +81,6 @@ struct node *addafter(struct node *last)
     scanf("%d", &data);
     printf("\nEnter the element after which to delete: ");
     scanf("%d", &item);
-    
     struct node *tmp, *p;
     p = last->link;
     do
