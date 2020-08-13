@@ -1,8 +1,8 @@
 //Deletion of element from a given position in an array
 #include <stdio.h>
+
 int main(){
     int n, arr[30], pos;
-
     printf("\nEnter the number of elements: ");
     scanf("%d", &n);
     for (int i = 0; i<n; i++){
