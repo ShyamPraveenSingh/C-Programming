@@ -9,5 +9,7 @@ int main()
     scanf("%d", &m);
     if (n!=m){
         printf("\nNumber of rows should be equal to columns");
-    }
+   }
+
+   return 0;
 }
