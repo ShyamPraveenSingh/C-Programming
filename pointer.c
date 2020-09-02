@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void main(){
+int main(void){
    int n, fact;
 
    printf("\nEnter the number: ");
