@@ -9,4 +9,5 @@ void count(struct node *start)
         count++;
     }
     printf("\nNumber of elements in the list is: ", count);
-} //End of count
+} 
+//End of count
