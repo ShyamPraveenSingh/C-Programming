@@ -1,12 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
-typedef struct student
+//initialization of the structure
+struct new
 {
-    int i, j;
-    char c;
-}
+    int a, b;
+};
+
 
 int main()
 {
-    
+
 }
