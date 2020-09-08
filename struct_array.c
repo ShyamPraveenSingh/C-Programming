@@ -13,7 +13,7 @@ int main()
     struct student a[3];
     for (int i = 0; i<3; i++){
         printf("\nEnter the %d student details: ", i+1);
-        scanf("%d %s %d", &a[i].no, &a[i].name, &a[i].marks);
+        scanf("%d %s %d", &a[i].no, a[i].name, &a[i].marks);
     }
     for(int i = 0; i<3; i++){
         printf("\nThe %d student details are: ",i+1);
