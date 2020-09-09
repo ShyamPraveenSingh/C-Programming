@@ -22,4 +22,5 @@ void main()
         scanf("%d %s %f",&ptr->eno, ptr->ename, &ptr->esal);
         printf("Details : \n %d %s %f \n", ptr->eno, ptr->ename, ptr->esal);
     }
+    return 0;
 }
