@@ -22,4 +22,8 @@ int main()
             scanf("%d", b[i][j]);
         }
     }
+
+
+
+    return 0;
 }
