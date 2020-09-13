@@ -9,7 +9,6 @@ int main()
     printf("\nSum = %d, Difference = %d, Product = %d\n",sum,diff,prod);
 
 }
-
 int func(int x, int y, int *ps, int *pd, int *pp)
 {
     *ps = x+y;
