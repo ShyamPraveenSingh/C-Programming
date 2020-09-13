@@ -7,7 +7,6 @@ int main()
     b=4;
     func(a,b,&sum,&diff,&prod);
     printf("\nSum = %d, Difference = %d, Product = %d\n",sum,diff,prod);
-
 }
 int func(int x, int y, int *ps, int *pd, int *pp)
 {
