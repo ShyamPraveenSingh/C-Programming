@@ -1,3 +1,4 @@
+//Deletion of element from a given position in an array
 #include <stdio.h>
 
 int main(){
