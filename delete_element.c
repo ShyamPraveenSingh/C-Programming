@@ -35,7 +35,6 @@ int main(){
         {
             printf("%d\t", arr[i]);
         }
-
         printf("\n");
     }
 
