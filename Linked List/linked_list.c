@@ -18,7 +18,7 @@ main()
     struct node *start = NULL;
 
     start = create_list(start);
-    
+    display(start);
 
 }
 
@@ -35,7 +35,7 @@ struct node *create_list(struct node *start)
     printf("\nEnter the element to be inserted: ");
     scanf("%d",&data);
     start = addatbeg(start, data);
-    for (i = 2; i<n; i++){
+    for (i = 2; i<=n; i++){
         printf("\nEnter the element to be inserted: ");
         scanf("%d", &data);
         start = addatend(start, data);
@@ -66,5 +66,23 @@ struct node *addatend(struct node *start, int data)
     p->link = tmp;
     tmp->link = NULL;
     return start;
+}
+
+//Display the contents
+void display(struct node *start)
+{
+    struct node *p;
+    if(start == NULL){
+        printf("\nList is empty");
+        return;
+    }
+    p = start;
+    printf("\nList is: ");
+    while(p != NULL){
+        printf("%d ", p->info);
+        p = p->link;
+    }
+    printf("\n\n");
+    
 }
 
