@@ -10,6 +10,7 @@ struct node
 };
 struct node *create_list(struct node *start);
 void display(struct node *start);
+void display(struct node *start);
 struct node *addatbeg(struct node *start, int data);
 struct node *addatend(struct node *start, int data);
 
@@ -19,6 +20,7 @@ main()
 
     start = create_list(start);
     display(start);
+    search(start);
 
 }
 
@@ -84,5 +86,25 @@ void display(struct node *start)
     }
     printf("\n\n");
     
+}
+
+//Searching in the list
+
+void search(struct node *start)
+{
+    int item;
+    printf("\nEnter the item to search: ");
+    scanf("%d", &item);
+    struct node *p = start;
+    int pos = 1;
+    while(p!=NULL){
+        if(p->info == item){
+            printf("\nElement found at %d position.", pos);
+            return;
+        }
+        p = p->link;
+        pos++;
+    }
+    printf("\nItem not found\n");
 }
 
