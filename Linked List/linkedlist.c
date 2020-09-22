@@ -105,3 +105,5 @@ void search (struct node *start)
     }
     printf("\nElement not found.\n");
 }
+
+//Deletion of firs
