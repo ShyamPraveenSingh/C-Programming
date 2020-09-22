@@ -13,6 +13,7 @@ void display(struct node *start);
 void display(struct node *start);
 struct node *addatbeg(struct node *start, int data);
 struct node *addatend(struct node *start, int data);
+struct node *del(struct node *start, int data);
 
 main()
 {
@@ -21,6 +22,11 @@ main()
     start = create_list(start);
     display(start);
     search(start);
+    int data;
+    printf("\n Enter the element to delete: ");
+    scanf("%d", &data);
+    del(start, data);
+    display(start);
 
 }
 
@@ -108,3 +114,33 @@ void search(struct node *start)
     printf("\nItem not found\n");
 }
 
+
+struct node *del(struct node *start, int data)
+{
+    struct node *p, *tmp;
+    if(start==NULL){
+        printf("\nList is empty");
+        return start;
+    }
+    if(start->info == data)   //Deletiion of first node
+    {
+        tmp = start;
+        start = start->link;
+        free(tmp);
+        return start;
+    }
+    p = start;      //Deletion in between or at the end
+    while(p->link!=NULL)
+    {
+        if(p->info == data)
+        {
+            tmp = p->link;
+            p->link = tmp->link;
+            free(tmp);
+            return start;
+        }
+        p = p->link;
+    }
+    printf("\nElement not found to delete.\n");
+    return start;
+}
