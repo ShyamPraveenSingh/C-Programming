@@ -144,3 +144,5 @@ struct node *del(struct node *start, int data)
     printf("\nElement not found to delete.\n");
     return start;
 }
+
+
