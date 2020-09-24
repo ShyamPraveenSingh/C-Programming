@@ -134,7 +134,7 @@ struct node *del(struct node *start, int data)
     p = start;
     while(p->link!=NULL)
     {
-        if(p->info == data)
+        if(p->link->info == data)
         {
             tmp = p->link;
             p->link = tmp->link;

@@ -14,6 +14,7 @@ void display(struct node *start);
 struct node *addatbeg(struct node *start, int data);
 struct node *addatend(struct node *start, int data);
 struct node *del(struct node *start, int data);
+struct node *reverse(struct node *start);
 
 main()
 {
@@ -21,11 +22,13 @@ main()
 
     start = create_list(start);
     display(start);
-    search(start);
-    int data;
-    printf("\n Enter the element to delete: ");
-    scanf("%d", &data);
-    del(start, data);
+    //search(start);
+    //int data;
+    //printf("\n Enter the element to delete: ");
+    //scanf("%d", &data);
+    //del(start, data);
+    //display(start);
+    reverse(start);
     display(start);
 
 }
@@ -146,3 +149,19 @@ struct node *del(struct node *start, int data)
 }
 
 
+//Reverse the linked list 
+struct node *reverse(struct node *start)
+{
+    struct node *prev, *ptr, *next;
+    prev = NULL;
+    ptr = start;
+    while(ptr!=NULL)
+    {
+        next = ptr->link;
+        ptr->link = prev;
+        prev = ptr;
+        ptr = next;
+    }
+    start = prev;
+    return start;
+}
