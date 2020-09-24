@@ -14,6 +14,7 @@ struct node *addtoend(struct node *start, int data);
 struct node *del(struct node *start, int data);
 
 
+
 main()
 {
     struct node *start = NULL;
@@ -24,6 +25,7 @@ main()
     printf("\nEnter the element to delete: ");
     scanf("%d", &data);
     del(start, data);
+    display(start);
 }
 
 //Creating the list
@@ -139,6 +141,7 @@ struct node *del(struct node *start, int data)
             free(tmp);
             return start;
         }
+        p = p->link;
 
     }
     printf("\nElement not found\n");
