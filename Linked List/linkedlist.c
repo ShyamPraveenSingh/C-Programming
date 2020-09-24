@@ -11,6 +11,7 @@ void display (struct node *start);
 void search (struct node *start);
 struct node *addtobeg(struct node *start, int data);
 struct node *addtoend(struct node *start, int data);
+struct node *del(struct node *start, int data);
 
 
 main()
@@ -19,6 +20,10 @@ main()
     start = create_list(start);
     display(start);
     search(start);
+    int data;
+    printf("\nEnter the element to delete: ");
+    scanf("%d", &data);
+    del(start, data);
 }
 
 //Creating the list
@@ -122,5 +127,20 @@ struct node *del(struct node *start, int data)
         free(tmp);
         return start;
     }
-    
+
+    //Deletion in between or in the end
+    p = start;
+    while(p->link!=NULL)
+    {
+        if(p->info == data)
+        {
+            tmp = p->link;
+            p->link = tmp->link;
+            free(tmp);
+            return start;
+        }
+
+    }
+    printf("\nElement not found\n");
+    return start;
 }
