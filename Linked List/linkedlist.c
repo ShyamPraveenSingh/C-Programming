@@ -107,3 +107,20 @@ void search (struct node *start)
 }
 
 //Deletion of the nodes
+struct node *del(struct node *start, int data)
+{
+    struct node *p, *tmp;
+    if(start==NULL){
+        printf("\nThe list is empty\n");
+        return start;
+    }
+
+    if (start->info == data)
+    {
+        tmp = start;
+        start = start->link;
+        free(tmp);
+        return start;
+    }
+    
+}
