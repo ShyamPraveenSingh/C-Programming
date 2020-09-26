@@ -148,7 +148,6 @@ struct node *del(struct node *start, int data)
     return start;
 }
 
-
 //Reverse the linked list 
 struct node *reverse(struct node *start)
 {
