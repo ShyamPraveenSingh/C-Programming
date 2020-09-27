@@ -10,7 +10,6 @@ struct node
 };
 struct node *create_list(struct node *start);
 void display(struct node *start);
-void display(struct node *start);
 struct node *addatbeg(struct node *start, int data);
 struct node *addatend(struct node *start, int data);
 struct node *del(struct node *start, int data);
