@@ -15,8 +15,8 @@ struct node *addtoend(struct node *start, int data);
 void display(struct node *start);
 void count(struct node *start);
 void search(struct node *start);
-struct node *delete(struct node *start, int data);
-struct node *reverse(struct node *start, int data);
+struct node *delete(struct node *start);
+struct node *reverse(struct node *start);
 
 main()
 {
@@ -25,6 +25,8 @@ main()
     display(start);
     count(start);
     search(start);
+    delete(start);
+    display(start);
 }
 
 
@@ -115,11 +117,55 @@ void search(struct node *start)
     while(p!=NULL)
     {
         if (p->info == item){
-            printf("\nElement is present at %d position \n", pos);
+            printf("\nElement is present at position: %d \n", pos);
             return;
         }
         p = p->link;
         pos++;
     }
     printf("\nElement not found\n");
+}
+
+
+//Delete the element from the list
+struct node *delete(struct node *start)
+{
+    struct node *p, *tmp;
+    if (start == NULL)
+    {
+        printf("\nList is empty \n");
+        return start;
+    }
+    int item;
+    printf("\nEnter the data to be deleted: ");
+    scanf("%d", &item);
+   //Deletion at the beginning
+    if (start->info == item){
+        tmp = start;
+        start = start->link;
+        free(tmp);
+        return start;
+    }
+   //Deletion in between or the end
+    p = start;
+    while(p->link!=NULL)
+    {
+        if(p->link->info == item)
+        {
+            tmp = p->link;
+            p->link = tmp->link;
+            free(tmp);
+            return start;
+        }
+
+        p = p->link;
+    }
+    printf("\nElement not found\n");
+    return start;
+}
+
+//Reversing the linked list
+struct node *reverse(struct node *start)
+{
+    
 }

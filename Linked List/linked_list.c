@@ -22,12 +22,12 @@ main()
     start = create_list(start);
     display(start);
     //search(start);
-    //int data;
-    //printf("\n Enter the element to delete: ");
-    //scanf("%d", &data);
-    //del(start, data);
+    int data;
+    printf("\n Enter the element to delete: ");
+    scanf("%d", &data);
+    del(start, data);
     //display(start);
-    reverse(start);
+    //reverse(start);
     display(start);
 
 }
