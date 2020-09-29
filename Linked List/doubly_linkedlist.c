@@ -17,11 +17,14 @@ struct node *addtoend(struct node *start, int data);
 struct node *addafter(struct node *start);
 struct node *addbefore(struct node *start);
 struct node *create_list(struct node *start);
+struct node *delete(struct node *start);
 
 main()
 {
     struct node *start=NULL;
     start = create_list(start);
+    display(start);
+    delete(start);
     display(start);
 }
 
@@ -149,5 +152,61 @@ struct node *create_list(struct node *start)
         scanf("%d", &data);
         start = addtoend(start, data);
     }
+    return start;
+}
+
+//Deleting of the node
+struct node *delete(struct node *start)
+{
+    int data;
+    printf("\nEnter the element to be deleted: ");
+    scanf("%d", &data);
+
+    struct node *tmp = NULL;
+
+    if(start == NULL){
+        printf("\nList is empty\n");
+        return start;
+    }
+
+    //Deletion of the only node
+    if(start->next == NULL)
+    {
+        tmp = start;
+        start = NULL;
+        free(tmp);
+        return start;
+    }
+    //Deletion of first node
+    if(start->info == data)
+    {
+        tmp = start;
+        start = start->next;
+        start->prev = NULL;
+        free(tmp);
+        return start;
+    }
+    //Deletion in between
+    tmp = start->next;
+    while(tmp->next!=NULL)
+    {
+        if(tmp->info == data)
+        {
+            tmp->prev->next = tmp->next;
+            tmp->next->prev = tmp->prev;
+            free(tmp);
+            return start;
+        }
+        tmp = tmp->next;
+    }
+
+    //Deletion at the end
+    if (tmp->info == data)
+    {
+        tmp->prev->next = NULL;
+        free(tmp);
+        return start;
+    }
+    printf("\nElement not found\n");
     return start;
 }
