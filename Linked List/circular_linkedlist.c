@@ -127,7 +127,7 @@ struct node *create_list(struct node *last)
     return last;
 }
 
-//Deleting of the elements
+//Deleting of the elements in the list
 struct node *del(struct node *last)
 {
     int data;
@@ -184,3 +184,5 @@ struct node *del(struct node *last)
     printf("\nElement %d not present in the list.\n", data);
     return last;
 }
+
+
