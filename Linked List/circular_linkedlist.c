@@ -184,3 +184,5 @@ struct node *del(struct node *last)
     printf("\nElement %d not present in the list.\n", data);
     return last;
 }
+
+
