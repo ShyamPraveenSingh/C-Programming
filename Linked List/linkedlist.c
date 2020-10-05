@@ -17,15 +17,14 @@ void count(struct node *start);
 void search(struct node *start);
 struct node *delete(struct node *start);
 struct node *reverse(struct node *start);
+void selection(struct node *start);
 
 main()
 {
     struct node *start = NULL;
     start = create_list(start);
     display(start);
-    count(start);
-    search(start);
-    delete(start);
+    selection(start);
     display(start);
 }
 
@@ -165,7 +164,28 @@ struct node *delete(struct node *start)
 }
 
 //Reversing the linked list
-struct node *reverse(struct node *start)
-{
+//struct node *reverse(struct node *start)
+//{
     
+//}
+
+//Selection sort
+void selection(struct node *start)
+{
+    struct node *p, *q;
+    int tmp;
+    p = start;
+
+    for (p = start; p->link != NULL; p = p->link)
+    {
+        for (q = p->link; q != NULL; q = q->link)
+        {
+            if (p->info > q->info)
+            {
+                tmp = p->info;
+                p->info = q->info;
+                q->info = tmp;
+            }
+        }
+    }
 }
