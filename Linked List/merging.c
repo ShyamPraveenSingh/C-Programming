@@ -14,6 +14,7 @@ struct node *insert_s(struct node *start, int data);
 void display(struct node *start);
 void merge(struct node *p1, struct node *p2);
 
+
 main()
 {
     struct node *start1 = NULL, *start2 = NULL;
