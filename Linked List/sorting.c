@@ -21,3 +21,20 @@ void selection(struct node *start)
         }
     }
 }
+
+//Bubble Sort
+void bubble(struct node *start)
+{
+    struct node *, *p;
+    int tmp;
+    for (end=NULL; end!=start->link; p=p->link)
+    {
+        q=q->link
+        if(p->link > q->link)
+        {
+            tmp = p->info;
+            p->info = q->info;
+            q->info = tmp;
+        }
+    }
+}
