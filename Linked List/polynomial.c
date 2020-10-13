@@ -52,3 +52,63 @@ struct node *create(struct node *start)
 }
 
 
+//Insertion in the list
+struct node *insert_s(struct node *start, float co, int ex)
+{
+    struct node *ptr, *tmp;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->coef = co;
+    tmp->expo = ex;
+
+    //if list is empty or greater than the first one
+    if(start == NULL || ex > start->expo)
+    {
+        tmp->link = start;
+        start = tmp;
+    }
+    else
+    {
+        ptr = start;
+        while(ptr->link!=NULL && ptr->link->expo >= ex)
+            ptr = ptr->link;
+            tmp->link = ptr->link;
+            ptr->link = tmp;
+    }
+    return start;
+}
+
+// Insertion in the list 
+struct node *insert(struct node *start, float co, int ex)
+{
+    struct node *ptr, *tmp;
+    tmp = (struct node *)malloc(sizeof(struct node));
+    tmp->coef = co;
+    tmp->expo = ex;
+
+    //if list is empty or greater than the first one
+    if (start == NULL)
+    {
+        tmp->link = start;
+        start = tmp;
+    }
+    else
+    {
+        ptr = start;
+        while (ptr->link != NULL)
+            ptr = ptr->link;
+        tmp->link = ptr->link;
+        ptr->link = tmp;
+    }
+    return start;
+}
+
+//Displaying the list
+void display(struct node *ptr)
+{
+    if(ptr == NULL)
+    {
+        printf("\nZero Polynomial");
+        return;
+    }
+    
+}
