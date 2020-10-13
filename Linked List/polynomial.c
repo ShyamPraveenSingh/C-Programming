@@ -110,5 +110,4 @@ void display(struct node *ptr)
         printf("\nZero Polynomial");
         return;
     }
-    
 }
