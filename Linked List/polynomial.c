@@ -101,7 +101,6 @@ struct node *insert(struct node *start, float co, int ex)
     }
     return start;
 }
-
 //Displaying the list
 void display(struct node *ptr)
 {
