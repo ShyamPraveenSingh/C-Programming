@@ -15,10 +15,19 @@ void display();
 
 main()
 {
-    int item;
-    printf("\nEnter the item to be pushed: ");
-    scanf("%d", &item);
-    push(item);
+    int item, n;
+    printf("\nEnter the number of items: ");
+    scanf("%d", &n);
+    for (int i = 0; i<n; i++)
+    {
+        printf("\nEnter the item to be pushed: ");
+        scanf("%d", &item);
+        push(item);
+    }
+    display();
+    pop(item);
+    display();
+    
    // break;
 }
 
@@ -90,7 +99,7 @@ void display()
     printf("\nStacks element :\n\n");
     for(i = top; i>=0; i--)
     {
-        printf(" %d\n", stack_arr[i]);
+        printf(" %d\t", stack_arr[i]);
     }
     printf("\n");
 }
