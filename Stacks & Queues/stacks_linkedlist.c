@@ -17,7 +17,11 @@ void display();
 
 main()
 {
-
+    int item;
+    printf("\nEnter the element to push: ");
+    scanf("%d", &item);
+    push(item);
+    display();
 }
 
 //Push function to add to list
@@ -39,8 +43,8 @@ void push(int item)
 int pop()
 {
     struct node *tmp;
-    tmp = (struct node *)malloc(sizeof(struct node));
-    if (isEmpty())
+    int item;
+        if (isEmpty())
     {
         printf("\nStacks Underflow");
         exit(1);
@@ -63,3 +67,30 @@ int peek()
     return top->info;
 }
 
+//Checking for the list
+int isEmpty()
+{
+    if(top == NULL)
+        return 1;
+    else
+        return 0;
+}
+
+//Displayig the list
+void display()
+{
+    struct node *ptr;
+    ptr = top;
+    if(isEmpty())
+    {
+        printf("\nStack is empty");
+        return;
+    }
+    printf("\nStacks elements are: \n");
+    while (ptr!= NULL)
+    {
+        printf(" %d\t", ptr->info);
+        ptr = ptr->link;
+    }
+    printf("\n");
+}
