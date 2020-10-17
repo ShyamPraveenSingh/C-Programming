@@ -44,7 +44,7 @@ int pop()
 {
     struct node *tmp;
     int item;
-        if (isEmpty())
+    if (isEmpty())
     {
         printf("\nStacks Underflow");
         exit(1);
