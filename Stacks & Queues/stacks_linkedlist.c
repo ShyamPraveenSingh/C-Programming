@@ -94,6 +94,3 @@ void display()
     }
     printf("\n");
 }
-
-
-
