@@ -9,7 +9,6 @@ main()
     scanf("%d", &n);
     printf("%d \n", count(n));
 }
-
 int count(n)
 {
     if(n == 0)
