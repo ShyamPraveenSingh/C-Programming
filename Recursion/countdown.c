@@ -7,12 +7,12 @@ main()
     int n;
     printf("\nEnter the number: ");
     scanf("%d", &n);
-    printf("%d", count(n));
+    printf("%d \n", count(n));
 }
 
 int count(n)
 {
     if(n == 0)
         return;
-    return (count (n-1));
+    return (n +  count(n-1));
 }
