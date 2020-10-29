@@ -23,4 +23,3 @@ void convert (int num, int base)
     else
         printf("%c", rem-10+ 'A');
 }
-
