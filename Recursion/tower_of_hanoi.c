@@ -24,4 +24,3 @@ void tofh (int ndisk, char source, char temp, char dest)
     printf("\nMove Disk %d from %c-->%c\n", ndisk, source, dest);
     tofh(ndisk - 1, temp, source, dest);
 }
-
