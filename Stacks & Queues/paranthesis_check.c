@@ -1,7 +1,7 @@
 //Program to check nesting of paranthesis using stacks
 #include <stdio.h>
 #include <string.h>
-#include <stdlin.h>
+#include <stdlib.h>
 
 #define MAX 20
 int top = -1;
