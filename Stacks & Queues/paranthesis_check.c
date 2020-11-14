@@ -9,7 +9,6 @@ void push(char);
 char pop();
 int match(char a, char b);
 main()
-
 {
     char exp[MAX];
     int valid;
