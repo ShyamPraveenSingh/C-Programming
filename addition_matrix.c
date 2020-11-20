@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 int main()
 {
     int r, c, m1[10][10], m2[10][10], res[10][10];
