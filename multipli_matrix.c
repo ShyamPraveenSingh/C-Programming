@@ -2,6 +2,7 @@
 #define ROW 3
 #define COL 3
 
+
 main()
 {
     int a[ROW][COL], b[ROW][COL], c[ROW][COL];
