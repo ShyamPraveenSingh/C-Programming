@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
     int n, candles[1000], i, max=0, count=0;
