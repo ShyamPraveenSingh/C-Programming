@@ -10,6 +10,7 @@ char stack [MAX];
 char pop();
 void push(char);
 
+
 main()
 {
     char str[20];
