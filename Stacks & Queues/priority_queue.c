@@ -1,7 +1,6 @@
 //Program of priority queue using linked list
 #include <stdio.h>
 #include <stdlib.h>
-
 struct node
 {
     int priority;
