@@ -1,5 +1,4 @@
 //Dynamic Memory Allocation of Structures
-
 #include <stdio.h>
 #include <stdlib.h>
 struct emp
