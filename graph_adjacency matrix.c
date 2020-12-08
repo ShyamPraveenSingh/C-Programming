@@ -24,8 +24,10 @@ main()
     {
         printf("\nEnter edge %d (-1 -1 to quit) : ",i);
         scanf("%d %d", &origin, &destin);
+        
         if ((origin == -1 || destin == -1))\
             break;
+
         if((origin >= n || destin >= n || origin < 0 || destin < 0))
         {
             printf("\nInvalid vertex\n");
