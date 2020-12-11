@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main()
 {
     int r, c, m1[10][10], m2[10][10], res[10][10];
@@ -26,6 +25,8 @@ int main()
             scanf("%d",&m1[i][j]);
         }
     }
+
+
 
     printf("\nEnter the elements of second array: ");
     for (int i = 0; i < r; i++){
