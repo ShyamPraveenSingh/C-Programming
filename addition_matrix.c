@@ -26,8 +26,6 @@ int main()
         }
     }
 
-
-
     printf("\nEnter the elements of second array: ");
     for (int i = 0; i < r; i++){
         for (int j = 0; j < c; j++){
