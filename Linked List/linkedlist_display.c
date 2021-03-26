@@ -1,5 +1,4 @@
 //Function for displayig the Linked List
-
 void display(struct node *start)
 {
     struct node *p;
