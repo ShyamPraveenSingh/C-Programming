@@ -1,6 +1,4 @@
 //Program for sorting of data in linked list
-
-
 //Selection sort
 void selection(struct node *start)
 {
@@ -38,3 +36,4 @@ void bubble(struct node *start)
         }
     }
 }
+
