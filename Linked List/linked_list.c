@@ -1,5 +1,4 @@
 //Program of single linked list
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,6 +7,7 @@ struct node
     int info;
     struct node *link;
 };
+
 struct node *create_list(struct node *start);
 void display(struct node *start);
 struct node *addatbeg(struct node *start, int data);
@@ -18,7 +18,6 @@ struct node *reverse(struct node *start);
 main()
 {
     struct node *start = NULL;
-
     start = create_list(start);
     display(start);
     //search(start);
@@ -116,7 +115,6 @@ void search(struct node *start)
     printf("\nItem not found\n");
 }
 
-
 struct node *del(struct node *start, int data)
 {
     struct node *p, *tmp;
@@ -163,3 +161,4 @@ struct node *reverse(struct node *start)
     start = prev;
     return start;
 }
+
