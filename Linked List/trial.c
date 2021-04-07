@@ -1,5 +1,4 @@
 //Creation of linked list
-
 struct node
 {
     int info;
@@ -8,6 +7,7 @@ struct node
 
 main()
 {
+
 
 }
 
