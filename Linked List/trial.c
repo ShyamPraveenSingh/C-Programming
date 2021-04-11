@@ -31,7 +31,6 @@ struct node *create_list(struct node *start)
     return start;
 }
 
-
 //Add to beginning
 struct node *addtobeg(struct node *start, int data)
 {
@@ -70,3 +69,4 @@ void display(struct node *start)
         p = p->link;
     }
 }
+
