@@ -69,4 +69,3 @@ void display(struct node *start)
         p = p->link;
     }
 }
-
