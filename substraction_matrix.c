@@ -6,11 +6,9 @@ int main()
     scanf("%d",&r);
     printf("\nEnter the number of columns: ");
     scanf("%d", &c);
-
         //Debugging
         if(r!=c){
             printf("\nError! Rows and Columns should be equal.");
-            
             printf("\nEnter the number of rows: ");
             scanf("%d", &r);
             printf("\nEnter the number of columns: ");
