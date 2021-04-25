@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main()
 {
     int r, c, m1[10][10], m2[10][10], res[10][10];
@@ -39,7 +40,6 @@ int main()
             res[i][j] = m1[i][j] + m2[i][j];
         }
     }
-
     for (int i=0; i<r; i++){
         for (int j=0;j<c; j++){
             printf("\n%d", res[i][j]);
@@ -47,7 +47,4 @@ int main()
     }
     printf("\n");
     return 0;
-    
 }
-
-   
