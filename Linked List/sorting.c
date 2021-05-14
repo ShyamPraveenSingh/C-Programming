@@ -4,6 +4,7 @@
 
 void selection(struct node *start)
 {
+    
     struct node *p, *q;
     int tmp;
     p = start;
@@ -43,6 +44,3 @@ main()
 {
 
 }
-
-
-
