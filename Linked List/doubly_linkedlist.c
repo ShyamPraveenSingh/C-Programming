@@ -44,6 +44,9 @@ void display(struct node *start)
     }
     printf("\n\n");
 }
+\\
+
+
 
 //Adding to the empty list
 struct node *addtoempty(struct node *start, int data)
