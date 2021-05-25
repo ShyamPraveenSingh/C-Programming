@@ -56,7 +56,6 @@ struct node *addtoend(struct node *start, int data)
     return start;
 }
 
-
 //Displaying the linked list
 void display(struct node *start)
 {
