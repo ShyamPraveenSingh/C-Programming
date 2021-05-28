@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 int main()
 {
     int r, c, m1[10][10], m2[10][10], res[10][10];
-
     printf("\nEnter the number of rows: ");
     scanf("%d",&r);
     printf("\nEnter the number of columns: ");
