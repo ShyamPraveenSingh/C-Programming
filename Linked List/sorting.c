@@ -36,4 +36,3 @@ void bubble(struct node *start)
         }
     }
 }
-
