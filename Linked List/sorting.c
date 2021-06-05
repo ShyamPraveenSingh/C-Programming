@@ -1,6 +1,7 @@
 //Program for sorting of data in linked list
 //Selection sort
 #include<stdio.h>
+
 void selection(struct node *start)
 {
     struct node *p, *q;
@@ -36,4 +37,9 @@ void bubble(struct node *start)
             q->info = tmp;
         }
     }
+}
+
+main()
+{
+    
 }
