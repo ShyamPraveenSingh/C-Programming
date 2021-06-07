@@ -8,9 +8,6 @@ struct node
 main()
 {
 
-
-
-
 }
 
 //Creation of linked list
