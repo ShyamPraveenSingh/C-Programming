@@ -12,3 +12,5 @@ void count(struct node *start)
     printf("\nNumber of elements in the list is: ", count);
 } 
 //End of count
+
+
